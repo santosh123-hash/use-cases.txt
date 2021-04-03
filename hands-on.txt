@@ -1,14 +1,24 @@
-Check git installation:
+Check Git installation
 git --version
 
-To see the git configuration:
+To see the git configuration
 Local conf: [current repo]
 git config --local -l
-
-Global conf:[apply to all users for a repo]
-git conf --global -l
-
-System conf:[apply to all users of a system]
+Global conf: [apply to all repo for a user]
+git config --global -l
+System conf: [apply to all user of a system]
 git config --system -l
 
-Create a repo in Github.com[You should be user of github]
+To unset the conf
+git config --global --unset user.name
+
+Creat a repo in Github.com [You should be registered user of github]
+
+[local machine] Init local repo / Link local repo with remote repository
+echo "# first-repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/git03042021/first-repo-1.git
+git push -u origin main
