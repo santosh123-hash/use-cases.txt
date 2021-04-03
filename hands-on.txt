@@ -1,0 +1,14 @@
+Check git installation:
+git --version
+
+To see the git configuration:
+Local conf: [current repo]
+git config --local -l
+
+Global conf:[apply to all users for a repo]
+git conf --global -l
+
+System conf:[apply to all users of a system]
+git config --system -l
+
+Create a repo in Github.com[You should be user of github]
